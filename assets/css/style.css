@@ -1,0 +1,266 @@
+:root {
+	/* Color Pallete */
+	--white: #ffffff;
+	--black: #1d1d1d;
+	--yellow: #fbe8a6;
+	--orange: #f4976c;
+	--blue: #6c3051;
+	--lightblue: #b4dfe5;
+	--skyblue: #d2fdff;
+	--call-2-action: #3ac229;
+}
+
+/* #region GENERAL */
+@font-face {
+	font-family: chalktastic;
+	src: url(../fonts/chalktastic.ttf);
+}
+
+.font-red-rose {
+	font-family: 'Red Rose', cursive;
+} /* Primary */
+.font-nunito {
+	font-family: 'Nunito', sans-serif;
+} /* Secondary */
+.font-chalktastic {
+	font-family: chalktastic;
+} /* Design */
+
+.color-white {
+	color: var(--white);
+}
+.color-black {
+	color: var(--black);
+}
+.color-yellow {
+	color: var(--yellow);
+}
+.color-orange {
+	color: var(--orange);
+}
+.color-blue {
+	color: var(--blue);
+}
+.color-lightblue {
+	color: var(--lightblue);
+}
+.color-skyblue {
+	color: var(--skyblue);
+}
+.color-call-2-action {
+	color: var(--call-2-action);
+}
+
+.bg-white {
+	background-color: var(--white);
+}
+.bg-black {
+	background-color: var(--black);
+}
+.bg-yellow {
+	background-color: var(--yellow);
+}
+.bg-orange {
+	background-color: var(--orange);
+}
+.bg-blue {
+	background-color: var(--blue);
+}
+.bg-lightblue {
+	background-color: var(--lightblue);
+}
+.bg-skyblue {
+	background-color: var(--skyblue);
+}
+.bg-call-2-action {
+	background-color: var(--call-2-action);
+}
+
+.height-250 {
+	height: 250px;
+}
+
+.ls-2 {
+	letter-spacing: 2px;
+}
+
+.lh-30 {
+	line-height: 30px;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+.fw-600 {
+	font-weight: 600;
+}
+.fw-700 {
+	font-weight: 700;
+}
+
+.fs-14 {
+	font-size: 14px;
+}
+.fs-16 {
+	font-size: 16px;
+}
+.fs-18 {
+	font-size: 18px;
+}
+.fs-20 {
+	font-size: 20px;
+}
+.fs-25 {
+	font-size: 25px;
+}
+.fs-29 {
+	font-size: 29px;
+}
+
+.horizontal-line {
+	width: 80px;
+	height: 3px;
+}
+.dot {
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+}
+.bls-2 {
+	border-left: solid 2px black;
+}
+/* #endregion GENERAL */
+
+/* #region hero */
+.hero {
+	background-image: url(../img/hero/top-left.png),
+		url(../img/hero/top-right.png), url(../img/hero/wave.svg),
+		url(../img/index/bg-2.jpg);
+	background-size: 25%, 40%, 100%, cover;
+	background-position: left top, right top, bottom, center;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+/* #endregion hero */
+
+/*background section 2*/
+#bg-1 {
+	background-image: url(../img/index/bg-1.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#bg-2 {
+	background-image: url(../img/hero/math.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-blend-mode: color;
+	color: whitesmoke;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/* #region nav */
+nav .nav-link {
+	color: var(--black) !important;
+}
+.navbar-brand img {
+	height: 50px !important;
+}
+/* #endregion nav */
+
+/* #region package */
+.img-package {
+	height: 310px;
+	width: 480px;
+	max-width: 100%;
+	background: url(../img/package/asia.png);
+	background-size: 100%;
+	background-position: center;
+	transition: 1s;
+}
+
+.img-package-2 {
+	height: 310px;
+	width: 480px;
+	max-width: 100%;
+	background: url(../img/package/global.jpg);
+	background-size: 100%;
+	background-position: center;
+	transition: 1s;
+}
+
+.img-package:hover {
+	background-size: 120%;
+}
+
+.img-package-2:hover {
+	background-size: 120%;
+}
+
+#package-p {
+	font-size: 18px;
+	font-family: Nunito, sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+/*img.img-fluid.mb-3.image-height {
+  height:180px;
+  object-fit: contain;
+  object-position: center;
+  max-width:100%;
+}*/
+
+/*.img-height {
+  height:191px;
+}*/
+
+/* #endregion package */
+
+/* #region FOOTER */
+.footer-wrapper img {
+	height: 150px;
+}
+/* #endregion FOOTER */
+
+/* #region MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+	.home-about p {
+		line-height: 25px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.home-about h2 {
+		text-align: center;
+	}
+	.learn-more-btn button {
+		margin: 0 auto 0 auto;
+	}
+	.reverse-tile .learn-more-btn {
+		display: flex;
+	}
+
+	.center-on-767 {
+		margin: 0 auto;
+	}
+	.pb-2-on-767 {
+		padding-bottom: 2em !important;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.side-a {
+		display: flex;
+		order: 2;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.reverse-tile .learn-more-btn {
+		justify-content: start !important;
+	}
+}
+/* #endregion MEDIA QUERIES */
